@@ -100,7 +100,6 @@ public class MyClass {
                       System.out.println("You invested: " + investment);
                       System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                   }
-                  //If you can, loop to account menu instead of main menu
               }
           }else if (validOption == false){
               System.out.println("You do not have an account. Set up an account at the menu.");
@@ -159,7 +158,7 @@ public class MyClass {
           while (validInsur == false) {
               if (insuranceChoice == 1 || insuranceChoice == 2 || insuranceChoice == 3){
                 validInsur = true;
-            }else{
+            } else {
                 System.out.print("Invalid response. Please try again: ");
                 insuranceChoice = scan.nextInt();
             }
@@ -201,8 +200,7 @@ public class MyClass {
               System.out.println("2. Restart");
               System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
               System.out.print("Please select your option: ");
-             
-              //LOOOOOPPPPPPPPPPP TO MENU
+
               int finalSelection = scan.nextInt();
        
              
