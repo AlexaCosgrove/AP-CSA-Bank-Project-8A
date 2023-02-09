@@ -69,7 +69,6 @@ public class MyClass {
                       System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                       accMenu = true;
                     }else if (deleteAccount.equals("n")) {
-                      //Works
                   }
               }
              
@@ -100,8 +99,11 @@ public class MyClass {
                       System.out.println("You invested: " + investment);
                       System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                   }
+                  
               }
           }else if (validOption == false){
+              accMenu = true;
+              System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
               System.out.println("You do not have an account. Set up an account at the menu.");
               System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
               System.out.println("1. Already have an account");
@@ -109,9 +111,10 @@ public class MyClass {
               System.out.println("3. Exit");
               System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
               System.out.print("Please type the number of the option best relating to you: ");
+              
               startUp = scan.nextInt();
           }
-      }
+      
      
       }
 
@@ -158,7 +161,7 @@ public class MyClass {
           while (validInsur == false) {
               if (insuranceChoice == 1 || insuranceChoice == 2 || insuranceChoice == 3){
                 validInsur = true;
-            } else {
+            }else{
                 System.out.print("Invalid response. Please try again: ");
                 insuranceChoice = scan.nextInt();
             }
@@ -200,7 +203,7 @@ public class MyClass {
               System.out.println("2. Restart");
               System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
               System.out.print("Please select your option: ");
-
+             
               int finalSelection = scan.nextInt();
        
              
@@ -238,6 +241,7 @@ public class MyClass {
      
 }
 
+}
 }
 }
 }
